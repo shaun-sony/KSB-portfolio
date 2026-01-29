@@ -113,28 +113,56 @@
     <!-- Main -->
     <div class="card">
       <div class="nav">
-        <a class="active" href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a class="active" href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="showTab('problem')">Problem Solving</a>
+        <a href="#" onclick="showTab('tooling')">Tooling & Technology</a>
+        <a href="#" onclick="showTab('cld')">Continuous Learning</a>
       </div>
 
+      <div id="about" class="tab-content">
       <h1>About Me</h1>
       <p>
         I work within a public sector Digital, Data and Technology environment providing user and application support.
         My role focuses on reliable service delivery, security, collaboration, and continuous improvement.
         This site supports my End Point Assessment professional discussion.
       </p>
+      </div>
 
-      <h2>What I’m Doing</h2>
-      <div class="grid">
-        <div class="box">
-          <h3>Problem Solving</h3>
-          <p>
-            Applying structured problem-solving techniques such as root cause analysis, the 5 Whys, and collaborative
-            swarming with second-line teams to resolve incidents effectively and prevent recurrence.
-          </p>
-        </div>
+      <div id="problem" class="tab-content" style="display:none;">
+        <h1>Problem Solving</h1>
+        <p>
+          I use structured problem-solving approaches such as root cause analysis, the 5 Whys, and collaborative swarming
+          to diagnose incidents accurately and prevent repeat issues.
+        </p>
+        <p>
+          I regularly use whiteboarding to map systems, authentication flows, and dependencies, ensuring the *right* problem
+          is identified before implementing a fix.
+        </p>
+      </div>
+
+      <div id="tooling" class="tab-content" style="display:none;">
+        <h1>Tooling & Technology</h1>
+        <p>
+          I support a mix of SaaS and on-premise systems typical of a local authority environment, including Microsoft 365
+          and legacy applications.
+        </p>
+        <p>
+          Before adopting or recommending tools, I assess fitness for purpose, security, vendor support, documentation,
+          and long-term sustainability.
+        </p>
+      </div>
+
+      <div id="cld" class="tab-content" style="display:none;">
+        <h1>Continuous Learning & Development</h1>
+        <p>
+          I actively undertake CPD to strengthen my technical and professional capability, including PowerShell
+          automation, Microsoft 365 administration, and cyber security fundamentals.
+        </p>
+        <p>
+          I share learning with colleagues through walkthroughs and documentation, ensuring my development has a
+          measurable positive impact on the wider team.
+        </p>
+      </div>
         <div class="box">
           <h3>Tooling & Technology</h3>
           <p>
