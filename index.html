@@ -96,6 +96,18 @@
       margin-top: 48px;
     }
   </style>
+<script>
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.style.display = 'none');
+
+    const navLinks = document.querySelectorAll('.nav a');
+    navLinks.forEach(link => link.classList.remove('active'));
+
+    document.getElementById(tabId).style.display = 'block';
+    event.target.classList.add('active');
+  }
+</script>
 </head>
 <body>
   <div class="container">
@@ -126,6 +138,10 @@
         My role focuses on reliable service delivery, security, collaboration, and continuous improvement.
         This site supports my End Point Assessment professional discussion.
       </p>
+      <p>
+        This portfolio is structured around key KSB areas that are discussed during the EPA, with each tab containing
+        evidence and reflection aligned to assessment criteria.
+      </p>
       </div>
 
       <div id="problem" class="tab-content" style="display:none;">
@@ -143,12 +159,12 @@
       <div id="tooling" class="tab-content" style="display:none;">
         <h1>Tooling & Technology</h1>
         <p>
-          I support a mix of SaaS and on-premise systems typical of a local authority environment, including Microsoft 365
+          I support a mix of SaaS and on‑premise systems typical of a local authority environment, including Microsoft 365
           and legacy applications.
         </p>
         <p>
           Before adopting or recommending tools, I assess fitness for purpose, security, vendor support, documentation,
-          and long-term sustainability.
+          and long‑term sustainability.
         </p>
       </div>
 
@@ -186,4 +202,3 @@
   </div>
 </body>
 </html>
-
