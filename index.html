@@ -97,7 +97,7 @@
     }
   </style>
 <script>
-  function showTab(tabId) {
+  function showTab(event, tabId) {
     const tabs = document.querySelectorAll('.tab-content');
     tabs.forEach(tab => tab.style.display = 'none');
 
@@ -125,10 +125,12 @@
     <!-- Main -->
     <div class="card">
       <div class="nav">
-        <a class="active" href="#" onclick="showTab('about')">About</a>
-        <a href="#" onclick="showTab('problem')">Problem Solving</a>
-        <a href="#" onclick="showTab('tooling')">Tooling & Technology</a>
-        <a href="#" onclick="showTab('cld')">Continuous Learning</a>
+        <a class="active" href="#" onclick="showTab(event, 'about')">About</a>
+        <a href="#" onclick="showTab(event, 'culture')">Organisational Culture</a>
+        <a href="#" onclick="showTab(event, 'ethics')">Data Ethics</a>
+        <a href="#" onclick="showTab(event, 'problem')">Problem Solving</a>
+        <a href="#" onclick="showTab(event, 'tooling')">Tooling & Technology</a>
+        <a href="#" onclick="showTab(event, 'cld')">Continuous Learning</a>
       </div>
 
       <div id="about" class="tab-content">
@@ -142,6 +144,33 @@
         This portfolio is structured around key KSB areas that are discussed during the EPA, with each tab containing
         evidence and reflection aligned to assessment criteria.
       </p>
+      </div>
+
+      <div id="culture" class="tab-content" style="display:none;">
+        <h1>Organisational Culture</h1>
+        <p>
+          I work within a local authority DDaT environment where governance, security, and accountability introduce
+          necessary constraints. These controls ensure public trust while still allowing innovation within defined
+          frameworks.
+        </p>
+        <p>
+          I focus on outcome-driven work rather than activity-driven metrics by addressing root causes and improving
+          services, not just closing tickets. I also adapt my communication style when working with external suppliers
+          or teams that operate under different cultural pressures.
+        </p>
+      </div>
+
+      <div id="ethics" class="tab-content" style="display:none;">
+        <h1>Data Ethics</h1>
+        <p>
+          My role requires regular handling of personal and sensitive information. I comply with UK GDPR by applying
+          least-privilege access, verifying user identity, and ensuring data is only accessed for legitimate purposes.
+        </p>
+        <p>
+          For testing and troubleshooting, I avoid live user data and use anonymised or dummy accounts. If I discovered
+          a potential data breach or security vulnerability, I would contain the issue immediately and follow formal
+          council escalation and reporting procedures.
+        </p>
       </div>
 
       <div id="problem" class="tab-content" style="display:none;">
